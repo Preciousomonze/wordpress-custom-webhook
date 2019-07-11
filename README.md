@@ -1,6 +1,6 @@
 # WordPress Custom Webhook Class
 
-**Contributors:** __Preciousomonze (Code Explorer) 🤓 __
+**Contributors:** __Preciousomonze (Code Explorer) 🤓__
 
 **Donate link:** <a href="https://rave.flutterwave.com/pay/preciousomonze" target="_blank">__Drop something for your boy  😋 🤓 🥳 🤑__</a>
 
