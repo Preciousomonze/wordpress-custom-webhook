@@ -60,3 +60,5 @@ This class helps you create your custom webhook url you can use for whatever rea
 
 ### None 😁😗
 #### If you have, feel free to create an issue.
+
+###Note: You better not remove my signature from the code when using it 🤺😑
