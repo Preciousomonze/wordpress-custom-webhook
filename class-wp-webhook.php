@@ -39,6 +39,13 @@ if ( ! class_exists( 'Pekky_WP_Webhook' ) ) {
         private static $webhook_tag = 'pekky_webhook';
 
 		/**
+		 * ini prefix, leave as it is :)
+		 * 
+		 * @var string
+		 */
+        private static $ini_hook_prefix = 'pekky_';
+
+		/**
 		 * Action to be triggered when the url is loaded
 		 * replace with a unique value you want
 		 * 
@@ -52,7 +59,7 @@ if ( ! class_exists( 'Pekky_WP_Webhook' ) ) {
         public function __construct() {
         	add_action( 'init', array( $this, 'setup' ) );
             add_action( 'parse_request', array( $this, 'parse_request' ) );            
-            add_action( self::$webhook_action, array( $this, 'webhook_handler' ) );
+            add_action( self::$ini_hook_prefix.self::$webhook_action, array( $this, 'webhook_handler' ) );
         }
 
         public function setup() {
@@ -71,7 +78,7 @@ if ( ! class_exists( 'Pekky_WP_Webhook' ) ) {
         }
 
         public function parse_request( &$wp ) {
-			$ini = 'pekky_';
+			$ini = self::$ini_hook_prefix;
             if( array_key_exists( self::$webhook_tag, $wp->query_vars ) ) {                
                 do_action( $ini.self::$webhook_action );
                 die(0);
