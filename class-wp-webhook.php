@@ -20,7 +20,7 @@ if ( ! class_exists( 'Pekky_WP_Webhook' ) ) {
         
         // These paramaters are for custom webhook
 		//your url will look like https://site.com/pekky-api/pekky_webhook
-		// network_site_url( self::$webhook . DIRECTORY_SEPARATOR . self::$webhook_tag ) //this helps return the full url
+		// network_site_url( self::$webhook . DIRECTORY_SEPARATOR . self::$webhook_tag ); //this helps return the full url
    
 		/**
 		 * Parent wekbhook
